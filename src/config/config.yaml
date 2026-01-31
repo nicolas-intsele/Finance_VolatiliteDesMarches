@@ -1,0 +1,14 @@
+data:
+  ticker: "^GSPC"
+  start_date: "2015-01-01"
+  end_date: "2024-01-01"
+
+paths:
+  raw_data: "data/raw/"
+  interim_data: "data/interim/"
+  processed_data: "data/processed/"
+
+volatility:
+  trading_days: 252
+
+ticker: "AAPL"
