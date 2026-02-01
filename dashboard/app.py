@@ -10,11 +10,11 @@ print("Current working directory:", os.getcwd())
 
 st.set_page_config(page_title="Volatility Forecasting", layout="wide")
 
-st.title("📊 Volatility Prediction Dashboard")
+st.title("Volatility Prediction Dashboard")
 
 df = pd.read_csv("data/processed/features.csv")
 
-model = st.selectbox("Select Model", ["GARCH", "XGBoost", "LSTM"])
+model = st.selectbox("Select Model", ["Benchmark", "Machine Learning", "LSTM"])
 
 fig = px.line(
     df,
