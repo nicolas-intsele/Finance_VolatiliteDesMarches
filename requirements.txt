@@ -9,7 +9,7 @@ arch
 xgboost
 lightgbm
 yfinance
-streamlit
+streamlit==1.55.0
 plotly
 pyyaml
 altair==4.2.2
