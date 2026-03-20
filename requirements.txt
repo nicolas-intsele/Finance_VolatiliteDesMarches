@@ -12,3 +12,4 @@ yfinance
 streamlit
 plotly
 pyyaml
+altair
