@@ -4,7 +4,7 @@ import os
 import yaml
 
 def load_config():
-    with open("src/config/config.yaml", "r") as file:
+    with open("src/config/config2.yaml", "r") as file:
         return yaml.safe_load(file)
 
 def clean_market_data(df):
@@ -31,7 +31,7 @@ if __name__ == "__main__":
     config = load_config()
 
     df_raw = pd.read_csv(
-        os.path.join(config["paths"]["raw_data"], "prices.csv")
+        os.path.join(config["paths"]["raw_data"], "prices_pred.csv")
     )
 
     print("Preview before cleaning:")
@@ -45,7 +45,7 @@ if __name__ == "__main__":
     save_clean_data(
         df_clean,
         config["paths"]["interim_data"],
-        "market_clean.csv"
+        "market_clean_pred.csv"
     )
 
     print("Clean market data saved successfully.")
