@@ -13,3 +13,4 @@ streamlit
 plotly
 pyyaml
 altair
+altair.vegalite.v4
