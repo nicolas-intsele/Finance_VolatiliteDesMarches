@@ -3,12 +3,13 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import os
+from pathlib import Path
 import joblib
 from datetime import date
 import yfinance as yf
 
 
-PROJECT_ROOT = r"C:\Users\nicol\OneDrive\Bureau\Finance"
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 os.chdir(PROJECT_ROOT)
 print("Current working directory:", os.getcwd())
 
