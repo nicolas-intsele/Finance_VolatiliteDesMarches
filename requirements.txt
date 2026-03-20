@@ -8,8 +8,6 @@ statsmodels
 arch
 xgboost
 lightgbm
-tensorflow
-torch
 yfinance
 streamlit
 plotly
