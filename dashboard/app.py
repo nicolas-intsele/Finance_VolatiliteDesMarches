@@ -88,8 +88,8 @@ predicted_price = [today_price - (predicted_vol * today_price), today_price + (p
 tomorrow_price = (predicted_price[0] + predicted_price[1]) / 2
 
 col1, col2 = st.columns(2)
-col1.metric("Aujourd'hui", f"{today_price:.1f}")
-col2.metric("Prédiction pour demain", f"[{predicted_price[0]:.1f}, {predicted_price[1]:.1f}]",
+col1.metric("Hier (fermeture)", f"{today_price:.1f}")
+col2.metric("Prédiction pour fermeture", f"[{predicted_price[0]:.1f}, {predicted_price[1]:.1f}]",
             delta=f"{tomorrow_price - today_price:.6f}")
 
 # Metriques de performance
